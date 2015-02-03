@@ -15,7 +15,8 @@ body {
 	background-color: #99CCCC;
 	font-family:'Open Sans', sans-serif;
 	color: #282525;
-	font-size: 1.1em;
+	font-size: 1em;
+	line-height: 1.5em;
 	/*background-image: url(../Images/demi-01.jpg);*/
 	/*background-size: contain;*/
 
@@ -25,8 +26,8 @@ body {
 .innerWrapper {
 	margin: 0 auto;
 	width: 93%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	/*margin-top: 40px;*/
+	/*margin-bottom: 40px;*/
 
 
 }
@@ -98,6 +99,7 @@ margin-bottom: 2.5px;
 	
 	padding:0;
 	margin: 0;
+	margin-bottom: 20px;
 
 }
 
@@ -120,6 +122,7 @@ margin-bottom: 2.5px;
 	padding-left: 0;
 	width: 100%;
 
+
 }
 
 .mainNav {
@@ -140,6 +143,14 @@ margin-bottom: 2.5px;
 
 }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 .introduction {
 	/*background-image: url("../Images/KissingHand.jpg");*/
 	background-repeat: no-repeat;
@@ -156,10 +167,11 @@ margin-bottom: 2.5px;
 
 .introduction h2{
 	position: absolute;
-	top: 450px;
+	font-size: 1.2em;
+	top: -200px;
 	width:44%;
 	left: 4%;
-	font-size: 1.2em;
+	text-align: left;
 	color: #E0DBCE;
 	font-weight: 400;
 	text-shadow: 0px 1px 1px black;
@@ -170,7 +182,7 @@ margin-bottom: 2.5px;
 
 .introduction button {
 	position: absolute;
-	top: 600px;
+	top: -75px;
 	left: 4%;
 	background-color: rgba(24,49,89,.5);
 	border:none;
@@ -183,8 +195,11 @@ margin-bottom: 2.5px;
 
 
 h2 {
-	font-weight: normal;
-	text-transform: uppercase;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 .cause button {
@@ -196,11 +211,13 @@ h2 {
 	padding: 7px 7px;
 	text-shadow: 0px 1px 1px black;
 	border-radius: 6px;
+	width: 50%;
+	/*margin-left: 25%;*/
 }
 
 .support li {
 	background-color: rgba(24,49,89,.9);
-	height: 50px;
+	/*height: 50px;*/
 	width: 100%;
 	margin: 0 auto;
 	list-style: none;
@@ -214,7 +231,7 @@ h2 {
 		text-decoration: none;
 	color: #E0DBCE;
 	font-size: 1em;
-	padding-top: 15px;
+	padding-top: 7px;
 	padding-bottom: 7px;
 	text-transform: uppercase;
 	display:block;
@@ -223,22 +240,23 @@ h2 {
 .support ul {
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 footer p {
 	text-align: center;
 }
 footer .fa-facebook-official {
-	font-size: 3em;
+	font-size: 4em;
 	color: #3a5795;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
+	margin-right: 10px;
 }
 
 footer .fa-twitter-square {
-	font-size: 3em;
+	font-size: 4em;
 	color: #55adcc;
 	text-align: center;
 	margin: 0px;
@@ -253,28 +271,47 @@ footer .fa-twitter-square {
 	padding: 7px 7px;
 	text-shadow: 0px 1px 1px black;
 	border-radius: 6px;
+	width: 50%;
+	/*margin-bottom: 10px;*/
 }
 
 .support select {
-	width: 200px;
+	width: 100%;
 	height: 50px;
+
 	margin-bottom: 10px;
 
+
+}
+
+.box {
+	background-color: #aaa;
+	border: 1px solid #888;
+	padding: 10px;
+}
+
+
+.support p {
+		font-size: .8em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-style: italic;
+	margin-top: 20px;
 }
 
 .label1 {
 	font-size: .8em;
 	padding-bottom: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 .label2 {
 	font-size: .8em;
 	padding-bottom: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
-.twitter {
+/*.twitter {
 background: url("../Images/icon-twitter.svg") no-repeat 0 0;
 background-size: 40px 80px;
 display: inline-block;
@@ -282,33 +319,287 @@ width: 40px;
 height: 40px;
 text-indent: -9999px;
 
-}
+}*/
 
 .twitter:hover {
 	background-position: 0 -40px;
 }
 
 .support {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .cause {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
-.bob{
+/*.bob{
 list-style: none;
 padding: 0;
 margin:0;
 text-align: center;
 
+}*/
+
+/*.bob li {
+	display: inline;
+}*/
+
+.introduction {
+	margin-bottom: 40px;
 }
 
-.bob li {
-	display: inline;
+.history p {
+	margin-bottom: 20px;
+}
+
+form h2 {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+form {
+	margin-bottom: 40px;
+}
+
+footer {
+	font-size: .8em;
+	margin-bottom: 20px;
+	margin-left: 3%;
+	margin-top: 100px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 40px;
+	line-height: 1.25;
+}
+
+footer a{
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(24,49,89);
+	font-size: 1.2em;
+}
+
+form {
+	text-align: left;
+	font-weight: bold;
+
+}
+
+form input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 15px;
+	font-weight: normal;
+	font-family: cursive;
+	font-size: 1.5em;
+	padding-left: 10px;
+}
+
+.selector {
+	background-color: transparent;
+
+}
+
+.styledSelect select{
+	background: transparent;
+   width: 100%;
+   padding: 10px;
+   font-size: 1em;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 40px;
+   -webkit-appearance: none;
+}
+
+
+
+.styledSelect {
+   width:75%;
+   height: 40px;
+   overflow: hidden;
+   background: url("../Images/icon-selectArrow.svg") no-repeat right #ddd;
+   background-size: 15px 15px;
+  background-position: 95% 12.5px;
+   border: 1px solid #ccc;
+   margin-bottom: 10px;
+   }
+.support ul {
+	margin-bottom: 0;
 }
 
 .introduction {
-	margin-bottom: 60px;
+	position:relative;
 }
+
+
+.give li{
+	background-color: #b55127;
+}
+
+.give h2 {
+	padding-bottom: 20px;
+}
+
+@media screen and (min-width: 580px) {
+body {
+background-color: #ddd;
+}
+
+h2 {
+	text-align: left;
+}
+
+.leftColumn {
+	float:left;
+	width: 48%;
+	margin-right: 4% !important;
+}
+
+.support li {
+	margin-bottom: 10px;
+}
+
+.rightColumn {
+	float: left;
+	width: 48%;
+}
+
+.columnLeft {
+	float:left;
+	width: 48%;
+	margin-right: 4% !important;
+}
+
+.columnRight {
+	float: left;
+	width: 48%;
+}
+
+.resources {
+	width: 48%;
+}
+
+
+
+.cause button {
+	width: 48%;
+}
+
+.mainNav li {
+	width: 25%;
+	float: left;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+/*.mainNav li:first-child {
+	border-radius: 6px 0px 0px 6px;
+}*/
+
+/*.mainNav li:last-child {
+	border-radius: 0px 6px 6px 0px;
+}*/
+
+.navWrapper {
+	width: 100%;
+}
+
+.donate {
+	width: 120px;
+	position: absolute;
+	top: 0px;
+	right: 8%;
+	height: 120px;
+	background: #B95628;
+	border-radius: 0px 0px 6px 6px;
+}
+
+
+.logo {
+	text-align:left;
+	margin: 0;
+	margin-left: 3%;
+	height:;
+
+}
+
+
+.introduction button {
+top: -100px;
+font-size: 1.3em;
+padding: 10px;
+
+}
+
+.introduction h2 {
+top: -300px;
+font-size: 1.8em;
+}
+
+.give li {
+	width: 48%;
+	float:left;
+}
+.give li:first-child {
+	margin-right: 4%;
+}
+
+.give li:nth-child(3) {
+	margin-right: 4%;
+}
+
+.give{
+	margin-bottom: 40px;
+}
+
+.history{
+	margin-top: 120px;
+}
+
+
+.left {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.right {
+	float: left;
+	width: 48%;
+}
+
+.left button {
+	width: 100%;
+}
+
+.styledSelect {
+	width: 100%;
+}
+
+.right button {
+	width: 100%;
+}
+
+.support {
+	display:block;
+}
+
+
+
+}
+
+@media screen and (min-width: 960px) {
+	body {
+		background-color: pink;
+	}
+}
+
+
 

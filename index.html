@@ -7,6 +7,8 @@
 			<link rel="stylesheet" href="CSS/normalize.css">
 			<link rel="stylesheet" href="CSS/stylesheet.css">
 			<link rel="stylesheet" href="CSS/font-awesome-4.3.0/css/font-awesome.css">
+			<script src="jquery-1.11.2.min.js"></script>
+			<script src="hamburgerNavigation.js"></script>
 	</head>
 
 	<body>
@@ -44,53 +46,95 @@
 				<p>We help low income, non-custodial fathers become engaged as a positive, productive and stable part of their childrens' lives.</p>
 				<button>Find Out More</button>
 			</article>
-			<section class="support">
+			<section class="support box clearfix">
 				<h2>Father? Get Support</h2>
 				<p>We are here to help you with:</p>
-				<ul>
+				<ul class="leftColumn">
 					<li><a href="#">Responsible Parenting</a></li>
 					<li><a href="#">Employment</a></li>
 					<li><a href="#">Child Support</a></li>
+				</ul>
+				<ul class="rightColumn">	
 					<li><a href="#">Financial Management</a></li>
 					<li><a href="#">Parenting and Co-Parenting</a></li>
 					<li><a href="#">Men's Health and Education</a></li>
-				</ul>
+				</ul><br><br>
+
+			<div class="left">
 				<p class="label1">To find out more, select a program:</p>
-				<select name="Select a Program" id="Select a Program"></select><br>
+
+				<div class="styledSelect">
+					<select class="selector" name="Select a Program" id="Select a Program">
+						<option value="SAP">Select A Program</option>
+						<option value="AFP">A Father's Place</option>
+						<option value="F2FP">Father to Father Project</option>
+						<option value="LFP">Lancaster Father Project</option>
+						<option value="M2M">Man 2 Man</option>
+						<option value="MFC">Midlands Father Coalition</option>
+						<option value="UFC">Upstate Fatherhood Coalition</option>
+					</select>
+				</div>	
+					<button class="resources">Submit</button>
+				</div>	
+				<br>
+
+				<div class="right">
 				<p class="label2">Looking for a specific document?</p>
 				<button class="resources">Resources</button>
+				</div>
 			</section>
-			<article>
+
+			<section class="give support">
+				<h2>Ways to Give</h2>
+				
+				<ul>
+					<li><a href="#">Invest in a Family's Future</a></li>
+					<li><a href="#">Be An Advocate</a></li>
+					<li><a href="#">Provide Employment</a></li>	
+					<li><a href="#">Learn More</a></li>
+					
+				</ul>
+			</section>	
+
+
+
+			<article class="history">
 				<h2>Organization History</h2>
 				<p> From humble beginnings in a closet next to the kitchen at St. Peter’s to its current home on Mixson Ave., the Father to Father Project has served over 1500 fathers, children and families. </p>
+
+				<button class="resources">Find Out More</button>
 			</article>
 			<form action="register_account.html">
-				<legend>Sign Up for Our Newsletter</legend>
-					<label for="firstname">First Name</label><br>
+				<h2>Sign Up for Our Newsletter</h2>
+				<div class="columnLeft">
+					<label for="firstname">First Name:</label><br>
 					<input type="text" name="firstname" id="firstname"><br>
 					
-					<label for="lastname">Last Name</label><br>
+					<label for="lastname">Last Name:</label><br>
 					<input type="text" name="lastname" id="lastname"><br>
-
-					<label for="email">Email</label><br>
+				</div>
+				<div class="columnRight">
+					<label for="email">Email:</label><br>
 					<input type="text" name="email" id="email"><br>
 
-					<label for="confirmEmail">Confirm Email</label><br>
+					<label for="confirmEmail">Confirm Email:</label><br>
 					<input type="text" name="confirmEmail" id="confirmEmail"><br>
+				</div>
+					<button class="resources">Submit</button>
 			</form>
 
 		</main>
 		</div>
-		<ul class="bob">
+		<!-- <ul class="bob"> 
 			<li><a href="" class="twitter">Twitter</a></li>
-		</ul>
+		</ul>-->
 
 		<footer>
 			<h1 class="hidden">Footer</h1>
 			<p><i class="fa fa-facebook-official"></i>
 			<i class="fa fa-twitter-square"></i></p>
 			<ul>
-				<li>(803)227-8800</li>
+				<li><a href="#">(803) 227-8800</a></li>
 				<li>2711 Middleburg Drive, Suite 111</li>
 				<li>Columbia, SC 29204</li>
 			</ul>
