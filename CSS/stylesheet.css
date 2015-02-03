@@ -223,6 +223,7 @@ h2 {
 .support ul {
 	margin: 0px;
 	padding: 0px;
+	margin-bottom: 30px;
 }
 
 footer p {
@@ -244,19 +245,70 @@ footer .fa-twitter-square {
 	padding: 0px;
 }
 
+.resources {
+	background-color: rgba(24,49,89,.9);
+	border:none;
+	color: #E0DBCE;
+	text-transform: uppercase;
+	padding: 7px 7px;
+	text-shadow: 0px 1px 1px black;
+	border-radius: 6px;
+}
 
-/*.twitter {
-background-image: url("../Images/icon-twitter.svg") no-repeat 0 0;
+.support select {
+	width: 200px;
+	height: 50px;
+	margin-bottom: 10px;
 
-display: block;
+}
+
+.label1 {
+	font-size: .8em;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+}
+
+.label2 {
+	font-size: .8em;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+}
+
+.twitter {
+background: url("../Images/icon-twitter.svg") no-repeat 0 0;
+background-size: 40px 80px;
+display: inline-block;
 width: 40px;
 height: 40px;
 text-indent: -9999px;
 
 }
 
-.icon-twitter {
+.twitter:hover {
 	background-position: 0 -40px;
-}*/
+}
 
+.support {
+	margin-bottom: 60px;
+}
+
+.cause {
+	margin-bottom: 60px;
+}
+
+.bob{
+list-style: none;
+padding: 0;
+margin:0;
+text-align: center;
+
+}
+
+.bob li {
+	display: inline;
+}
+
+.introduction {
+	margin-bottom: 60px;
+}
 
