@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+*{
+	box-sizing: border-box;
+}
+
+
+.hidden {
+	visibility: hidden;
+	height: 0px;
+	margin: 0px;
+
+}
+body {
+	background-color: #99CCCC;
+	font-family:'Open Sans', sans-serif;
+	color: #282525;
+	font-size: 1.1em;
+	/*background-image: url(../Images/demi-01.jpg);*/
+	/*background-size: contain;*/
+
+}
+
+
+.innerWrapper {
+	margin: 0 auto;
+	width: 93%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+
+}
+
+.navWrapper {
+	margin: 0 auto;
+	width: 93%;
+	margin-top: 6px;
+}
+
+.logo {
+
+	background-image: url('../Images/logogogo.png');
+	background-size: 108px 261px;
+    margin: 0 auto;
+	height:108px ;
+	width: 261px;
+	display:block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	text-align: center;
+	padding:0px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+
+
+	/*margin-top: 100px;*/
+	/*border: 1px solid #222;*/
+
+	
+}
+.donate {
+	display:block;
+	width: 93%;
+	margin-left: 3.5%;
+	/*margin-right: 1.5%;*/
+	height: 50px;
+	background-color: #B95628;
+	color: #7C371D;
+	box-shadow: none;
+	text-decoration: none;
+	border-style: none;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: .05em;
+	margin-bottom: 10px;
+	text-shadow: 0px 1px 1px #BF5F41;
+	box-shadow: 2px 2px 2px #3E4147;
+	border-radius: 6px;
+
+
+
+background: rgb(181,81,39); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(181,81,39,1) 0%, rgba(181,81,39,1) 49%, rgba(181,81,39,1) 49%, rgba(181,81,39,1) 49%, rgba(132,60,35,1) 50%, rgba(178,71,28,1) 50%, rgba(181,81,39,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,81,39,1)), color-stop(49%,rgba(181,81,39,1)), color-stop(49%,rgba(181,81,39,1)), color-stop(49%,rgba(181,81,39,1)), color-stop(50%,rgba(132,60,35,1)), color-stop(50%,rgba(178,71,28,1)), color-stop(100%,rgba(181,81,39,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(181,81,39,1) 0%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(132,60,35,1) 50%,rgba(178,71,28,1) 50%,rgba(181,81,39,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(181,81,39,1) 0%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(132,60,35,1) 50%,rgba(178,71,28,1) 50%,rgba(181,81,39,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(181,81,39,1) 0%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(132,60,35,1) 50%,rgba(178,71,28,1) 50%,rgba(181,81,39,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(181,81,39,1) 0%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(181,81,39,1) 49%,rgba(132,60,35,1) 50%,rgba(178,71,28,1) 50%,rgba(181,81,39,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b55127', endColorstr='#b55127',GradientType=0 ); /* IE6-9 */
+
+
+
+
+margin-bottom: 2.5px;
+}
+.mainNav {
+	
+	padding:0;
+	margin: 0;
+
+}
+
+.mainNav li {
+	background-color: rgba(24,49,89,.9);
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	margin-bottom: 4px;
+	border-radius: 6px;
+
+
+
+}
+
+.mainNav ul {
+	padding: 0;
+	padding-left: 0;
+	width: 100%;
+
+}
+
+.mainNav {
+	/*margin-bottom: 30px;*/
+}
+
+.mainNav a {
+
+		text-decoration: none;
+	color: #E0DBCE;
+	font-size: 1em;
+	padding-top: 15px;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+	display:block;
+	line-height: 1.2;
+
+
+}
+
+.introduction {
+	/*background-image: url("../Images/KissingHand.jpg");*/
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	/*border: 2px solid red;*/
+}
+
+.introImage {
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.introduction h2{
+	position: absolute;
+	top: 450px;
+	width:44%;
+	left: 4%;
+	font-size: 1.2em;
+	color: #E0DBCE;
+	font-weight: 400;
+	text-shadow: 0px 1px 1px black;
+	line-height: 1.5em;
+
+
+}
+
+.introduction button {
+	position: absolute;
+	top: 600px;
+	left: 4%;
+	background-color: rgba(24,49,89,.5);
+	border:none;
+	color: #E0DBCE;
+	text-transform: uppercase;
+	padding: 7px 7px;
+	text-shadow: 0px 1px 1px black;
+	border-radius: 6px;
+}
+
+
+h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.cause button {
+
+	background-color: rgba(24,49,89,.9);
+	border:none;
+	color: #E0DBCE;
+	text-transform: uppercase;
+	padding: 7px 7px;
+	text-shadow: 0px 1px 1px black;
+	border-radius: 6px;
+}
+
+.support li {
+	background-color: rgba(24,49,89,.9);
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	margin-bottom: 4px;
+	border-radius: 6px;
+}
+
+
+.support a {
+		text-decoration: none;
+	color: #E0DBCE;
+	font-size: 1em;
+	padding-top: 15px;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+	display:block;
+	line-height: 1.2;
+}
+.support ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+footer p {
+	text-align: center;
+}
+footer .fa-facebook-official {
+	font-size: 3em;
+	color: #3a5795;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+footer .fa-twitter-square {
+	font-size: 3em;
+	color: #55adcc;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*.twitter {
+background-image: url("../Images/icon-twitter.svg") no-repeat 0 0;
+
+display: block;
+width: 40px;
+height: 40px;
+text-indent: -9999px;
+
+}
+
+.icon-twitter {
+	background-position: 0 -40px;
+}*/
+
+
