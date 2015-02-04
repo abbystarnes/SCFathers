@@ -599,6 +599,61 @@ font-size: 1.8em;
 	body {
 		background-color: pink;
 	}
+.rightColumn{
+	float: left;
+	clear:left;
+	width: 100%;
+}
+
+.right {
+	float:left;
+	clear:left;
+	width: 100%;
+}
+
+.support {
+	width:49%;
+	display: inline-block;
+	float:left;
+	clear: left;
+}
+
+.left {
+	float:left;
+	clear:left;
+	width: 100%;
+}
+
+.leftColumn {
+	width: 100%;
+}
+
+
+.give {
+	float:right;
+	width: 49%;
+	display: inline-block;
+}
+
+.give li {
+	width: 100%;
+}
+
+.cause {
+	width: 49%;
+	display:inline-block;
+	float:left;
+}
+
+.history {
+	float:left;
+	display: inline-block;
+	width: 48%;
+}
+
+form {
+	float:left;
+}
 }
 
 
