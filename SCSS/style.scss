@@ -2,7 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
-$blue-color:#3e5c32;
+$blue-color:rgb(24,49,89);
 $orange-background-color: #B95628;
 
 @mixin breakpoint($point) {
@@ -27,7 +27,7 @@ $orange-background-color: #B95628;
 
 }
 body {
-	background-color: #d0ffce;
+	background-color: #ddd;
 	font-family:'Open Sans', sans-serif;
 	color: #282525;
 	font-size: 1em;
@@ -782,4 +782,24 @@ form {
 blockquote {
 	font-weight: bold;
 	font-style: italic;
+}
+
+
+
+.imageBox img {
+	height: 200px;
+
+
+
+}
+.imageBox {
+	width: 200px;
+	height: 200px;
+	overflow:hidden;
+	display: block;
+	float:left;
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: 20px;
+
 }

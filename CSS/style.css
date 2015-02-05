@@ -11,7 +11,7 @@
   margin: 0px; }
 
 body {
-  background-color: #d0ffce;
+  background-color: #ddd;
   font-family: 'Open Sans', sans-serif;
   color: #282525;
   font-size: 1em;
@@ -88,7 +88,7 @@ body {
   margin: 0;
   margin-bottom: 20px; }
   .mainNav li {
-    background-color: #3e5c32;
+    background-color: #183159;
     height: 50px;
     width: 100%;
     margin: 0 auto;
@@ -143,7 +143,7 @@ body {
   position: absolute;
   top: -75px;
   left: 4%;
-  background-color: #3e5c32;
+  background-color: #183159;
   border: none;
   color: #E0DBCE;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ h2 {
   padding: 0px; }
 
 .cause button {
-  background-color: #3e5c32;
+  background-color: #183159;
   border: none;
   color: #E0DBCE;
   text-transform: uppercase;
@@ -170,7 +170,7 @@ h2 {
   /*margin-left: 25%;*/ }
 
 .support li {
-  background-color: #3e5c32;
+  background-color: #183159;
   /*height: 50px;*/
   width: 100%;
   margin: 0 auto;
@@ -213,7 +213,7 @@ footer .fa-twitter-square {
   padding: 0px; }
 
 .resources {
-  background-color: #3e5c32;
+  background-color: #183159;
   border: none;
   color: #E0DBCE;
   text-transform: uppercase;
@@ -578,5 +578,18 @@ form input {
 blockquote {
   font-weight: bold;
   font-style: italic; }
+
+.imageBox img {
+  height: 200px; }
+
+.imageBox {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-right: 2%;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
