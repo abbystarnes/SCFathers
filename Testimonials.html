@@ -5,30 +5,38 @@
 			<meta charset="utf-8">
 			<title>Home Page</title>
 			<link rel="stylesheet" href="CSS/normalize.css">
-			<link rel="stylesheet" href="CSS/stylesheet.css">
+			<link rel="stylesheet" href="CSS/style.css">
 	</head>
 
 	<body>
-	<div class="innerWrapper">
-		<header>
-			<h1 class="hidden">Header</h1>
-			<a href="index.html">South Carolina Center for Fathers and Families</a>
-			<button>DONATE</button>
-		</header>
+
+	
+		
 		<main>
-			<nav>
+			<header>
+
+			<h1><a class="logo" href="index.html">South Carolina Center for Fathers and Families</a></h1>
+		
+			<button class="donate">DONATE</button>
+		</header>
+		
+
+
+			<nav class="navWrapper">
 				<h1 class="hidden">Navigation</h1>
-				<ul>
-					<li><a href="#"></a>About</li>
-					<li><a href="#"></a>Resources</li>
-					<li><a href="#"></a>Programs</li>
-					<li><a href="#"></a>News</li>
+				<ul class="mainNav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">Programs</a></li>
+					<li><a href="#">News</a></li>
 				</ul>
 			</nav>
-			<h1>Testimonials</h1>
+			<div class="innerWrapper">
+			<h1 class="testimonials">Testimonials</h1>
+
 				<article>
 				<h1 class="hidden">Jordan's Testimony</h1>
-				<img src="Images/KissingHand.jpg" alt="Father kissing child's hand.">
+				<img class="introImage" src="Images/KissingHand.jpg" alt="Father kissing child's hand.">
 				<blockquote>“I realized the street life that I was living was not good for me or my children. I was tired of living that life.” -Jordan Price
 				</blockquote>
 				<p>	Jordan voluntarily enrolled in the Father to Father program in November of 2005.  At the time of his enrollment he was actively using drugs and alcohol. Although he came from a sound family background, he succumbed to the temptations of the streets and pursued a life of easy money and quick highs.
@@ -60,16 +68,21 @@
 
 				</section>
 		</main>	
-
 		<footer>
 			<h1 class="hidden">Footer</h1>
+			
 			<ul>
-				<li>(803)227-8800</li>
+					<p> <ul class="bob"> 
+						<li><a href="" class="twitter">Twitter</a></li>
+					 
+						<li><a href="" class="facebook">Facebook</a></li>
+					</ul></p>
+				<li><a href="#">(803) 227-8800</a></li>
 				<li>2711 Middleburg Drive, Suite 111</li>
 				<li>Columbia, SC 29204</li>
 			</ul>
 			&copy; 2014 SC Center for Fathers and Families
-			
+
 		</footer>
 	</div>
 	</body>	

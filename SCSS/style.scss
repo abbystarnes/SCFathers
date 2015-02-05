@@ -2,7 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
-$blue-color:rgba(24,49,89,.9);
+$blue-color:#3e5c32;
 $orange-background-color: #B95628;
 
 @mixin breakpoint($point) {
@@ -27,7 +27,7 @@ $orange-background-color: #B95628;
 
 }
 body {
-	background-color: #99CCCC;
+	background-color: #d0ffce;
 	font-family:'Open Sans', sans-serif;
 	color: #282525;
 	font-size: 1em;
@@ -495,7 +495,11 @@ body {
 // background-color: #ddd;
 }
 
-
+ button {
+	// background-color: transparent !important;
+	// color: black !important;
+	// text-shadow: none !important;
+}
 
 h2 {
 	text-align: left;
@@ -770,4 +774,12 @@ form {
 	margin-right: 7px;
 }
 
+.testimonials {
+	margin-top: 130px;
+	margin-bottom: 40px;
+}
 
+blockquote {
+	font-weight: bold;
+	font-style: italic;
+}
