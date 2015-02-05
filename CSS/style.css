@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+.styledSelect {
+  width: 100%; }
+
 .hidden {
   visibility: hidden;
   height: 0px;
@@ -247,23 +250,48 @@ footer .fa-twitter-square {
   padding-bottom: 0px;
   margin-bottom: 0px; }
 
-/*.twitter {
-background: url("../Images/icon-twitter.svg") no-repeat 0 0;
-background-size: 40px 80px;
-display: inline-block;
-width: 40px;
-height: 40px;
-text-indent: -9999px;
+.twitter {
+  background: url("../Images/icon-twitter.svg") no-repeat 0 0;
+  background-size: 40px 80px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px; }
 
-}*/
-.twitter:hover {
-  background-position: 0 -40px; }
+.facebook {
+  background: url("../Images/icon-facebook.svg") no-repeat 0 0;
+  background-size: 40px 80px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px; }
 
+.bob {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%; }
+
+.bob li {
+  display: inline-block;
+  text-align: center; }
+
+@media (min-width: 660px) {
+  .twitter:hover {
+    background-position: 0 -40px; }
+
+  .facebook:hover {
+    background-position: 0 -40px; } }
 .support {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 100%; }
 
 .cause {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: inline-block; }
 
 /*.bob{
 list-style: none;
@@ -271,7 +299,8 @@ padding: 0;
 margin:0;
 text-align: center;
 
-}*/
+}*
+
 /*.bob li {
 	display: inline;
 }*/
@@ -279,7 +308,8 @@ text-align: center;
   margin-bottom: 40px; }
 
 .history p {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: inline-block; }
 
 form h2 {
   margin-bottom: 20px;
@@ -329,14 +359,14 @@ form input {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  line-height: 1;
+  line-height: 1.3;
   border: 0;
   border-radius: 0;
   height: 40px;
   -webkit-appearance: none; }
 
 .styledSelect {
-  width: 75%;
+  width: 100%;
   height: 40px;
   overflow: hidden;
   background: url("../Images/icon-selectArrow.svg") no-repeat right #ddd;
@@ -358,9 +388,6 @@ form input {
   padding-bottom: 20px; }
 
 @media screen and (min-width: 580px) {
-  body {
-    background-color: #ddd; }
-
   h2 {
     text-align: left; }
 
@@ -407,11 +434,11 @@ form input {
     width: 100%; }
 
   .donate {
-    width: 120px;
+    width: 100px;
     position: absolute;
     top: 0px;
     right: 8%;
-    height: 120px;
+    height: 110px;
     background: #B95628;
     border-radius: 0px 0px 6px 6px; }
 
@@ -430,7 +457,8 @@ form input {
     font-size: 1.8em; }
 
   .give {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    display: inline-block; }
     .give li {
       width: 48%;
       float: left; }
@@ -441,7 +469,7 @@ form input {
     margin-right: 4%; }
 
   .history {
-    margin-top: 120px; }
+    margin-top: 0px; }
 
   .left {
     float: left;
@@ -461,15 +489,16 @@ form input {
     width: 100%; }
 
   .support {
-    display: block; } }
+    width: 100%; } }
 @media screen and (min-width: 960px) {
-  body {
-    background-color: pink; }
-
   .rightColumn {
     float: left;
     clear: left;
     width: 100%; }
+
+  .donate {
+    width: 120px;
+    height: 120px; }
 
   .right {
     float: left;
@@ -477,7 +506,7 @@ form input {
     width: 100%; }
 
   .support {
-    width: 49%;
+    width: 100%;
     display: inline-block;
     float: left;
     clear: left; }
@@ -491,23 +520,55 @@ form input {
     width: 100%; }
 
   .give {
-    float: right;
-    width: 49%;
+    float: left;
+    width: 100%;
     display: inline-block; }
     .give li {
       width: 100%; }
 
   .cause {
-    width: 49%;
+    width: 100%;
     display: inline-block;
     float: left; }
 
   .history {
     float: left;
+    clear: left;
     display: inline-block;
-    width: 48%; }
+    width: 100%;
+    margin-top: 0px; }
 
   form {
-    float: left; } }
+    float: left; }
+
+  .bigColumn1 {
+    display: inline-block;
+    float: left;
+    width: 48%;
+    margin-right: 4%; }
+
+  .bigColumn2 {
+    display: inline-block;
+    float: left;
+    width: 48%; } }
+@media (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    max-width: 1100px; } }
+
+@media (min-width: 960px) {
+  form {
+    margin: 0 auto;
+    width: 100%; }
+    form input {
+      width: 100%; }
+    form label {
+      width: 100%; } }
+@media (min-width: 660px) {
+  form .history {
+    margin-top: 0px; } }
+
+.bob li:first-child {
+  margin-right: 7px; }
 
 /*# sourceMappingURL=style.css.map */

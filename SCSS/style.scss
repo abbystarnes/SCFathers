@@ -5,10 +5,20 @@
 $blue-color:rgba(24,49,89,.9);
 $orange-background-color: #B95628;
 
+@mixin breakpoint($point) {
+	@media ('min-width:' + $point) {
+		@content;
+	}
+}
+
 *{
 	box-sizing: border-box;
 }
 
+
+.styledSelect {
+	width: 100%;
+}
 
 .hidden {
 	visibility: hidden;
@@ -25,12 +35,14 @@ body {
 	/*background-image: url(../Images/demi-01.jpg);*/
 	/*background-size: contain;*/
 
+	
 }
 
 
 .innerWrapper {
 	margin: 0 auto;
 	width: 93%;
+
 	/*margin-top: 40px;*/
 	/*margin-bottom: 40px;*/
 
@@ -305,7 +317,7 @@ footer .fa-twitter-square {
 	margin-bottom: 0px;
 }
 
-/*.twitter {
+.twitter {
 background: url("../Images/icon-twitter.svg") no-repeat 0 0;
 background-size: 40px 80px;
 display: inline-block;
@@ -313,18 +325,50 @@ width: 40px;
 height: 40px;
 text-indent: -9999px;
 
-}*/
+}
 
+.facebook {
+background: url("../Images/icon-facebook.svg") no-repeat 0 0;
+background-size: 40px 80px;
+display: inline-block;
+width: 40px;
+height: 40px;
+text-indent: -9999px;
+}
+
+.bob {
+	display:inline;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+	width:100%
+}
+
+.bob li {
+	display: inline-block;
+	text-align: center;
+}
+
+@media (min-width: 660px) {
 .twitter:hover {
 	background-position: 0 -40px;
 }
 
+.facebook:hover {
+	background-position: 0 -40px;
+}
+}
+
 .support {
 	margin-bottom: 40px;
+	display:inline-block;
+	width: 100%;
 }
 
 .cause {
 	margin-bottom: 40px;
+	display:inline-block;
 }
 
 /*.bob{
@@ -333,11 +377,13 @@ padding: 0;
 margin:0;
 text-align: center;
 
-}*/
+}*
 
 /*.bob li {
 	display: inline;
 }*/
+
+
 
 .introduction {
 	margin-bottom: 40px;
@@ -345,6 +391,7 @@ text-align: center;
 
 .history p {
 	margin-bottom: 20px;
+	display:inline-block;
 }
 
 form h2 {
@@ -405,7 +452,7 @@ form input {
    width: 100%;
    padding: 10px;
    font-size: 1em;
-   line-height: 1;
+   line-height: 1.3;
    border: 0;
    border-radius: 0;
    height: 40px;
@@ -415,7 +462,7 @@ form input {
 
 
 .styledSelect {
-   width:75%;
+   width:100%;
    height: 40px;
    overflow: hidden;
    background: url("../Images/icon-selectArrow.svg") no-repeat right #ddd;
@@ -441,10 +488,14 @@ form input {
 	padding-bottom: 20px;
 }
 
+
+
 @media screen and (min-width: 580px) {
 body {
-background-color: #ddd;
+// background-color: #ddd;
 }
+
+
 
 h2 {
 	text-align: left;
@@ -506,11 +557,14 @@ h2 {
 }
 
 .donate {
-	width: 120px;
+
+	
+	
+	width: 100px;
 	position: absolute;
 	top: 0px;
 	right: 8%;
-	height: 120px;
+	height: 110px;
 	background: #B95628;
 	border-radius: 0px 0px 6px 6px;
 }
@@ -544,6 +598,7 @@ font-size: 1.8em;
 	li:first-child {
 	margin-right: 4%;
 	}
+	display:inline-block;
 }
 
 
@@ -554,7 +609,7 @@ font-size: 1.8em;
 
 
 .history{
-	margin-top: 120px;
+	margin-top: 0px;
 }
 
 
@@ -584,7 +639,7 @@ font-size: 1.8em;
 
 
 .support {
-	display:block;
+	width: 100%;
 }
 
 
@@ -593,13 +648,19 @@ font-size: 1.8em;
 
 @media screen and (min-width: 960px) {
 	body {
-		background-color: pink;
+		// background-color: pink;
 	}
 .rightColumn{
 	float: left;
 	clear:left;
 	width: 100%;
 }
+
+.donate {
+	width: 120px;
+	height: 120px;
+}
+
 
 .right {
 	float:left;
@@ -608,11 +669,12 @@ font-size: 1.8em;
 }
 
 .support {
-	width:49%;
+	width:100%;
 	display: inline-block;
 	float:left;
 	clear: left;
 }
+
 
 .left {
 	float:left;
@@ -626,8 +688,8 @@ font-size: 1.8em;
 
 
 .give {
-	float:right;
-	width: 49%;
+	float:left;
+	width: 100%;
 	display: inline-block;
 
 	li {
@@ -638,19 +700,74 @@ font-size: 1.8em;
 
 
 .cause {
-	width: 49%;
+	width: 100%;
 	display:inline-block;
 	float:left;
 }
 
 .history {
 	float:left;
+	clear:left;
 	display: inline-block;
-	width: 48%;
+	width: 100%;
+	margin-top:0px;
 }
 
 form {
 	float:left;
 }
+
+.bigColumn1 {
+	display:inline-block;
+	float:left;
+	// border: 2px solid green;
+	width: 48%;
+	margin-right: 4%;
+
 }
+
+.bigColumn2 {
+	display: inline-block;
+	float:left;
+	// border: 2px solid red;
+	width: 48%;
+}
+}
+
+
+body {
+	@media (min-width: 1024px) {
+	margin: 0 auto;
+	max-width: 1100px;
+	}
+}
+
+
+
+form {
+	@media (min-width: 960px) {
+		margin: 0 auto;
+		width: 100%;
+
+	input {
+		width: 100%;
+	}
+	label {
+		width: 100%;
+	}	
+	}
+
+.history {
+	@media (min-width: 660px) {
+	margin-top: 0px;	
+	}
+}
+
+}
+
+
+.bob li:first-child {
+	margin-right: 7px;
+}
+
 
