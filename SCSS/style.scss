@@ -1,4 +1,9 @@
+
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+$blue-color:rgba(24,49,89,.9);
+$orange-background-color: #B95628;
 
 *{
 	box-sizing: border-box;
@@ -101,10 +106,8 @@ margin-bottom: 2.5px;
 	margin: 0;
 	margin-bottom: 20px;
 
-}
-
-.mainNav li {
-	background-color: rgba(24,49,89,.9);
+	li {
+	background-color: $blue-color;
 	height: 50px;
 	width: 100%;
 	margin: 0 auto;
@@ -112,24 +115,15 @@ margin-bottom: 2.5px;
 	text-align: center;
 	margin-bottom: 4px;
 	border-radius: 6px;
+	}
 
-
-
-}
-
-.mainNav ul {
+	ul {
 	padding: 0;
 	padding-left: 0;
 	width: 100%;
+	}
 
-
-}
-
-.mainNav {
-	/*margin-bottom: 30px;*/
-}
-
-.mainNav a {
+	a {
 
 		text-decoration: none;
 	color: #E0DBCE;
@@ -139,7 +133,7 @@ margin-bottom: 2.5px;
 	text-transform: uppercase;
 	display:block;
 	line-height: 1.2;
-
+	}
 
 }
 
@@ -184,7 +178,7 @@ margin-bottom: 2.5px;
 	position: absolute;
 	top: -75px;
 	left: 4%;
-	background-color: rgba(24,49,89,.5);
+	background-color: $blue-color;
 	border:none;
 	color: #E0DBCE;
 	text-transform: uppercase;
@@ -204,7 +198,7 @@ h2 {
 
 .cause button {
 
-	background-color: rgba(24,49,89,.9);
+	background-color: $blue-color;
 	border:none;
 	color: #E0DBCE;
 	text-transform: uppercase;
@@ -216,7 +210,7 @@ h2 {
 }
 
 .support li {
-	background-color: rgba(24,49,89,.9);
+	background-color: $blue-color;
 	/*height: 50px;*/
 	width: 100%;
 	margin: 0 auto;
@@ -264,7 +258,7 @@ footer .fa-twitter-square {
 }
 
 .resources {
-	background-color: rgba(24,49,89,.9);
+	background-color: $blue-color;
 	border:none;
 	color: #E0DBCE;
 	text-transform: uppercase;
@@ -440,7 +434,7 @@ form input {
 
 
 .give li{
-	background-color: #b55127;
+	background-color: $orange-background-color;
 }
 
 .give h2 {
@@ -526,8 +520,7 @@ h2 {
 	text-align:left;
 	margin: 0;
 	margin-left: 3%;
-	height:;
-
+	
 }
 
 
@@ -543,21 +536,22 @@ top: -300px;
 font-size: 1.8em;
 }
 
-.give li {
+.give{
+	margin-bottom: 40px;
+	li {
 	width: 48%;
-	float:left;
-}
-.give li:first-child {
+	float:left;}
+	li:first-child {
 	margin-right: 4%;
+	}
 }
+
 
 .give li:nth-child(3) {
 	margin-right: 4%;
 }
 
-.give{
-	margin-bottom: 40px;
-}
+
 
 .history{
 	margin-top: 120px;
@@ -573,6 +567,10 @@ font-size: 1.8em;
 .right {
 	float: left;
 	width: 48%;
+
+	button {
+	width: 100%;
+	}
 }
 
 .left button {
@@ -583,9 +581,7 @@ font-size: 1.8em;
 	width: 100%;
 }
 
-.right button {
-	width: 100%;
-}
+
 
 .support {
 	display:block;
@@ -633,11 +629,13 @@ font-size: 1.8em;
 	float:right;
 	width: 49%;
 	display: inline-block;
+
+	li {
+	width: 100%;
+	}
 }
 
-.give li {
-	width: 100%;
-}
+
 
 .cause {
 	width: 49%;
@@ -655,6 +653,4 @@ form {
 	float:left;
 }
 }
-
-
 
