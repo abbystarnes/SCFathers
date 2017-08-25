@@ -1,4 +1,4 @@
-![The South Carolina Center for Fathers and Families logo](Images/logogogo.png.png)
+![The South Carolina Center for Fathers and Families logo](Images/logogogo.png)
 
 # The South Carolina Center for Fathers and Families
 > redesign and responsive build of a local non-profit website
